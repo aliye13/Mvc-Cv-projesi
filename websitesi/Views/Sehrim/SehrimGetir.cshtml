@@ -1,0 +1,27 @@
+﻿@model MvcCv.Models.Entity.TblSehrim
+@{
+    ViewBag.Title = "SehrimGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+
+<br />
+<h4>Sehrim Düzenleme Sayfası</h4>
+<br />
+<form method=" post">
+
+    @Html.Label("Gezilecek yer Açıklaması")
+    @Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control" })
+    <br />
+    @Html.Label("İlce")
+    @Html.TextBoxFor(x => x.İlce, new { @class = "form-control" })
+    <br />
+
+    <button class=" btn btn-success" >Güncelle</button>
+    <a href="/Sehrim/SehrimSil/@ViewBag.d" class=" btn btn-danger">Sil</a>
+</form>
+
+
+

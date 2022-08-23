@@ -1,0 +1,24 @@
+﻿@model MvcCv.Models.Entity.TblSehrim
+@{
+    ViewBag.Title = "YeniYer";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<br />
+<h4>Gezilecek Yer Ekleme Sayfası</h4>
+<br />
+<form method=" post">
+
+    @Html.Label("Gezilecek yer Açıklaması")
+    @Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control" })
+    <br />
+    @Html.Label("İlce")
+    @Html.TextBoxFor(x => x.İlce, new { @class = "form-control" })
+    <br />
+
+    <button class=" btn btn-primary">Kaydet</button>
+</form>
+
+
+
